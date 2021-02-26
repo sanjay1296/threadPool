@@ -4,10 +4,13 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "csv-file-validator": "^1.10.1",
     "csv-parse": "^4.15.3",
-    "express": "^4.17.1"
+    "csv-validator": "0.0.3",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "papaparse": "^5.3.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

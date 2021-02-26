@@ -92,7 +92,23 @@ module.exports.wrapAsWorker = (workerFunc) => {
     parentPort.on('message', ({data, port}) => {
         // console.log(workerFunc(data))
         try {
-            port.postMessage(workerFunc(data));
+                port.postMessage(workerFunc(data));
+        } catch (error) {
+            console.error(error);
+        }
+
+    });
+}
+
+module.exports.wrapAsWorkerPromise = (workerFunc) => {
+    parentPort.on('message', ({data, port}) => {
+        // console.log(workerFunc(data))
+        try {
+            workerFunc(data).then((result) => {
+                port.postMessage(result);
+
+            })
+           
         } catch (error) {
             console.error(error);
         }
