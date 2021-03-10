@@ -6,9 +6,12 @@
   "dependencies": {
     "csv-file-validator": "^1.10.1",
     "csv-parse": "^4.15.3",
+    "csv-parser": "^3.0.0",
     "csv-validator": "0.0.3",
     "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
     "multer": "^1.4.2",
+    "nodemon": "^2.0.7",
     "papaparse": "^5.3.0"
   },
   "scripts": {
@@ -24,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/sanjay1296/threadPool/issues"
   },
-  "homepage": "https://github.com/sanjay1296/threadPool#readme"
+  "homepage": "https://github.com/sanjay1296/threadPool#readme",
+  "devDependencies": {
+    "eslint": "^7.21.0"
+  }
 }

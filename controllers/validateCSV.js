@@ -19,8 +19,6 @@ const isEmailValid = function (email) {
 const isPasswordValid = function (password) {
     return password.length >= 4
 }
-   
-
     // const fileContent = await fs.readFile('./userDetailsQAValid.csv','utf8');
     // const records = parse(fileContent, {columns: true});
     const CSVConfig = {
@@ -56,7 +54,6 @@ module.exports = ( function (fileContent) {
             .catch(err => {
                 console.log("validatorERR",err)
             })
-
 });
     
 
