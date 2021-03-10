@@ -1,12 +1,13 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "commonjs": true,
+        "es2021": true,
+        "node": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        "ecmaVersion": 12
     },
     "rules": {
         "accessor-pairs": "error",
@@ -131,7 +132,7 @@
         "no-extra-parens": "off",
         "no-floating-decimal": "error",
         "no-implicit-coercion": "error",
-        "no-implicit-globals": "error",
+        "no-implicit-globals": "off",
         "no-implied-eval": "error",
         "no-inline-comments": "off",
         "no-invalid-this": "error",
@@ -248,7 +249,10 @@
         "space-infix-ops": "off",
         "space-unary-ops": "error",
         "spaced-comment": "off",
-        "strict": "error",
+        "strict": [
+            "error",
+            "never"
+        ],
         "switch-colon-spacing": "error",
         "symbol-description": "error",
         "template-curly-spacing": [
